@@ -117,8 +117,8 @@
           
           <div className="todocontainer">
           {
-          Todoarray && Todoarray.length ?<>
-          {
+          Todoarray && Todoarray.length ?
+          
             Todoarray.map((item)=>(
               <div className='todo'>
                 
@@ -132,7 +132,7 @@
                 </div>
               </div>
             ))
-          }</> : <div className="none">Nothing to show 😢</div>
+           : <div className="none">Nothing to show 😢</div>
         }
         </div>
         </div>
