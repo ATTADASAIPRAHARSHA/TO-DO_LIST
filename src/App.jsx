@@ -64,11 +64,14 @@
     };
     const handleedit =(id)=>{
       const mezz =Todoarray.filter(item=>item.id===id)
-      setTodo(mezz[0].Todo);
+      if(mezz)
+
+      {
+        setTodo(mezz[0].Todo);
       const ezz = Todoarray.filter(item=>item.id!=id)
       setTodoarray(ezz)
       localStorage.setItem('todos',JSON.stringify(ezz))
-
+      }
     }
     const handledelete =(id)=>{
       const ezz = Todoarray.filter(item=>item.id!=id)
