@@ -1,0 +1,30 @@
+.header{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navlist ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.Navlist li{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.Navlist li::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    bottom: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.Navlist li:hover::before {
+    transform: scale(1);
+  }

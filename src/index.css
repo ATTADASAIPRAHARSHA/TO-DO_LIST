@@ -1,0 +1,23 @@
+:root {
+--darkblue: #5680e9;
+--skblue: rgb(88, 182, 229,0.85);
+--lightblue: #84ceeb;
+--gray: #c1c8e4;
+--violet: rgb(136, 96, 208);
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  min-height: 100%;
+  margin: 0;
+}
+html{
+  background: linear-gradient(180deg,#006663 , #111111);
+  background-repeat: no-repeat;
+}
